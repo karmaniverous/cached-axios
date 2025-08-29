@@ -55,11 +55,22 @@ const nodeExternals = new Set([
   ...builtinModules.map((m) => `node:${m}`),
 ]);
 
-const makePlugins = (): Plugin[] => [typescriptPlugin()];
+const makePlugins = (): Plugin[] => [
+  typescriptPlugin({
+    // Do not write transpiled output to disk; let Rollup handle bundling.
+    outputToFilesystem: false,
+    // Override conflicting tsconfig flags for bundling. Declarations are produced by rollup-plugin-dts.
+    compilerOptions: {
+      declaration: false,
+      emitDeclarationOnly: false,
+      noEmit: false,
+      sourceMap: false,
+    },
+  }),
+];
 
 const commonInputOptions = (): InputOptions => ({
-  plugins: makePlugins(),
-  onwarn(warning: RollupLog, defaultHandler: (w: RollupLog) => void) {
+  plugins: makePlugins(),  onwarn(warning: RollupLog, defaultHandler: (w: RollupLog) => void) {
     defaultHandler(warning);
   },
   external: (id) =>

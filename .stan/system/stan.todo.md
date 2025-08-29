@@ -1,6 +1,6 @@
 # Development Plan (stan.todo.md)
 
-When updated: 2025-08-29T17:25:00Z
+When updated: 2025-08-29T17:45:00Z
 
 ## Next up
 
@@ -11,6 +11,10 @@ When updated: 2025-08-29T17:25:00Z
 
 ## Completed (recent)
 
+- Fixed stan:build failure by configuring @rollup/plugin-typescript
+  with outputToFilesystem=false and compilerOptions overrides to avoid
+  filesystem writes and sourcemap warnings; bundling remains TS+DTS only.
+- Removed unused archive.ts and pruned tar devDependency (knip clean).
 - Simplified Rollup config for library bundling: removed unused plugins
   (replace/alias/node-resolve/commonjs/json/terser), kept TS + DTS only,
   fixed ESLint warnings, and pruned unused devDependencies. This resolves
