@@ -83,11 +83,11 @@ export const withQuery = async <T>(
   id: Id,
   tags: Tag[],
   base?: AxiosRequestConfig,
-): Promise<AxiosResponse<T>> => {  const cacheCfg: Partial<CacheProperties> = {
+): Promise<AxiosResponse<T>> => {
+  const cacheCfg: Partial<CacheProperties> = {
     ...(inheritCache(base) ?? {}),
     id,
   };
-
   const res = await call({
     ...(base ?? {}),
     cache: cacheCfg,
@@ -113,11 +113,11 @@ export const withMutation = async <T>(
   call: (opts: AxiosRequestConfig) => Promise<AxiosResponse<unknown>>,
   invalidate: Tag[],
   base?: AxiosRequestConfig,
-): Promise<AxiosResponse<T>> => {  const cacheCfg: Partial<CacheProperties> = {
+): Promise<AxiosResponse<T>> => {
+  const cacheCfg: Partial<CacheProperties> = {
     ...(inheritCache(base) ?? {}),
     update: updateMapFor(invalidate),
   };
-
   const res = await call({
     ...(base ?? {}),
     cache: cacheCfg,

@@ -1,6 +1,6 @@
 # Development Plan (stan.todo.md)
 
-When updated: 2025-08-29T18:25:00Z
+When updated: 2025-08-29T19:10:00Z
 
 ## Next up
 
@@ -11,6 +11,8 @@ When updated: 2025-08-29T18:25:00Z
 
 ## Completed (recent)
 
+- Fixed ESLint export sort error in `src/index.ts` and cleaned minor
+  formatting artifacts in `src/cache.ts` and `src/config.ts`.
 - Created `./.stan/system/stan.project.md` to memorialize repo-specific
   requirements (caching semantics, config builder behavior, bundling,
   API surface).
