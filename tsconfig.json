@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "composite": true,
@@ -6,26 +7,13 @@
     "declarationDir": ".tsbuild",
     "declarationMap": true,
     "emitDeclarationOnly": true,
-    "exactOptionalPropertyTypes": true,
-    "module": "esnext",
-    "moduleDetection": "force",
-    "moduleResolution": "bundler",
     "noEmit": true,
-    "noUncheckedIndexedAccess": true,
-    "noUncheckedSideEffectImports": true,
     "outDir": ".tsbuild",
     "paths": {
       "@/*": ["*"]
     },
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
     "sourceMap": true,
-    "strict": true,
-    "stripInternal": true,
-    "target": "esnext",
-    "tsBuildInfoFile": ".tsbuild/tsconfig.tsbuildinfo",
-    "types": ["node"],
-    "verbatimModuleSyntax": true
+    "tsBuildInfoFile": ".tsbuild/tsconfig.tsbuildinfo"
   },
   "include": ["**/*", "**/*.json"]
 }

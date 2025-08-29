@@ -1,6 +1,6 @@
 # Development Plan (stan.todo.md)
 
-When updated: 2025-08-29T17:45:00Z
+When updated: 2025-08-29T18:05:00Z
 
 ## Next up
 
@@ -11,6 +11,15 @@ When updated: 2025-08-29T17:45:00Z
 
 ## Completed (recent)
 
+- Extracted shared TS config to `tsconfig.base.json` and updated both
+  `tsconfig.json` and `tsconfig.rollup.json` to extend it. Rollup now
+  uses its dedicated config without composite/outDir constraints, while
+  the project tsconfig retains declaration/noEmit behavior.
+- Resolved stan:build plugin validation by introducing a dedicated
+  `tsconfig.rollup.json` without `composite`/`outDir` and pointing
+  `@rollup/plugin-typescript` at it. This avoids the TS6304 and outDir
+  path checks and silences sourcemap warnings while preserving TS+DTS
+  minimal bundling.
 - Fixed stan:build failure by configuring @rollup/plugin-typescript
   with outputToFilesystem=false and compilerOptions overrides to avoid
   filesystem writes and sourcemap warnings; bundling remains TS+DTS only.
