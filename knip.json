@@ -1,0 +1,12 @@
+{
+  "entry": ["src/**/index.ts"],
+  "ignoreDependencies": ["auto-changelog"],
+  "project": ["*/**", "!docs/**"],
+  "rules": {
+    "exports": "off",
+    "types": "off"
+  },
+  "vitest": {
+    "entry": ["*/**/*.test.!(*.*)"]
+  }
+}
