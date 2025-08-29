@@ -1,6 +1,6 @@
 # Development Plan (stan.todo.md)
 
-When updated: 2025-08-29T14:10:00Z
+When updated: 2025-08-29T17:25:00Z
 
 ## Next up
 
@@ -11,5 +11,9 @@ When updated: 2025-08-29T14:10:00Z
 
 ## Completed (recent)
 
+- Simplified Rollup config for library bundling: removed unused plugins
+  (replace/alias/node-resolve/commonjs/json/terser), kept TS + DTS only,
+  fixed ESLint warnings, and pruned unused devDependencies. This resolves
+  typecheck/build/docs failures caused by @rollup/plugin-replace.
 - Pinned awslabs/aws-icons-for-plantuml to v18.0 in `diagrams/aws.pu`
   to match the Chocolatey PlantUML version and ensure reliable renders.

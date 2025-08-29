@@ -1,7 +1,7 @@
 {
   "entry": ["src/**/index.ts"],
-  "ignoreDependencies": ["auto-changelog"],
   "project": ["*/**", "!docs/**"],
+  "ignoreBinaries": ["plantuml"],
   "rules": {
     "exports": "off",
     "types": "off"
