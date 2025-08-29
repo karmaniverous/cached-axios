@@ -1,9 +1,20 @@
+/**
+ * Barrel exports for the cache-aware Axios helpers.
+ *
+ * Public surface:
+ * - `cachedAxios`: shared ACI-wrapped Axios instance.
+ * - `withQuery`, `withMutation`: low-level cache helpers.
+ * - `makeCacheHelpers`: pre-bound helpers with a base config.
+ * - `buildConfig`, `ConfigInputSchema`: key/tag builder utilities.
+ * - `orvalMutator`: Orval-compatible mutator.
+ * - Re-exported types from Axios and ACI for convenience.
+ */
+
 export { withMutation, withQuery } from './cache';
 export { cachedAxios } from './cachedAxios';
 export type { BuiltNode, ConfigInput, Id, Tag } from './config';
 export { buildConfig, ConfigInputSchema } from './config';
-export { makeCacheHelpers } from './factory';
-export {
+export { makeCacheHelpers } from './factory';export {
   type OrvalBodyType,
   type OrvalErrorType,
   orvalMutator,
