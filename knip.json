@@ -1,7 +1,7 @@
 {
   "entry": ["src/**/index.ts"],
   "project": ["*/**", "!docs/**"],
-  "ignoreBinaries": ["plantuml"],
+  "ignoreBinaries": ["plantuml", "stan"],
   "rules": {
     "exports": "off",
     "types": "off"
