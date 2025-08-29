@@ -1,10 +1,12 @@
+> **_Tag‑aware caching for Axios: stable cache IDs, simple tag invalidation, and a drop‑in Orval mutator on top of axios‑cache‑interceptor._**
+
+# @karmaniverous/cached-axios
+
 [![npm version](https://img.shields.io/npm/v/@karmaniverous/cached-axios.svg)](https://www.npmjs.com/package/@karmaniverous/cached-axios)
 ![Node Current](https://img.shields.io/node/v/@karmaniverous/cached-axios) <!-- TYPEDOC_EXCLUDE -->
 [![docs](https://img.shields.io/badge/docs-website-blue)](https://docs.karmanivero.us/cached-axios)
 [![changelog](https://img.shields.io/badge/changelog-latest-blue.svg)](https://github.com/karmaniverous/cached-axios/tree/main/CHANGELOG.md)<!-- /TYPEDOC_EXCLUDE -->
 [![license](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://github.com/karmaniverous/cached-axios/tree/main/LICENSE.md)
-
-# @karmaniverous/cached-axios
 
 Tag-aware caching helpers for Axios on top of
 [axios-cache-interceptor](https://github.com/arthurfiorette/axios-cache-interceptor).
