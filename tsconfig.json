@@ -2,18 +2,11 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "composite": true,
-    "declaration": true,
-    "declarationDir": ".tsbuild",
-    "declarationMap": true,
-    "emitDeclarationOnly": true,
     "noEmit": true,
-    "outDir": ".tsbuild",
     "paths": {
       "@/*": ["*"]
     },
-    "sourceMap": true,
-    "tsBuildInfoFile": ".tsbuild/tsconfig.tsbuildinfo"
+    "sourceMap": true
   },
   "include": ["**/*", "**/*.json"]
 }
