@@ -2,94 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/index.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/modules.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/hierarchy.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/documents/CHANGELOG.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/modules/index.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/interfaces/index.AxiosError.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/interfaces/index.AxiosRequestConfig.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/interfaces/index.AxiosResponse.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/interfaces/index.CacheProperties.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/interfaces/index.CacheRequestConfig.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/types/index.BuiltNode.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/types/index.ConfigInput.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/types/index.Id.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/types/index.OrvalBodyType.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/types/index.OrvalErrorType.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/types/index.Tag.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/variables/index.cachedAxios.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/variables/index.ConfigInputSchema.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/functions/index.buildConfig.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/functions/index.makeCacheHelpers.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/functions/index.orvalMutator.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/functions/index.withMutation.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 	<url>
 		<loc>https://docs.karmanivero.us/cached-axios/functions/index.withQuery.html</loc>
-		<lastmod>2025-08-29T11:54:01.279Z</lastmod>
+		<lastmod>2025-08-29T12:15:45.692Z</lastmod>
 	</url>
 </urlset>
