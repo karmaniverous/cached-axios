@@ -1,17 +1,20 @@
 # Development Plan (stan.todo.md)
 
-When updated: 2025-08-30T14:20:00Z
+When updated: 2025-08-30T14:30:00Z
 
 ## Next up
+
 - Run `npm run diagrams` and confirm `diagrams/out/hello-world.png`
-  renders (pinned to v18.0).- When upgrading PlantUML locally, re-test awslabs v19/v20 and consider
+  renders (pinned to v18.0).
+- When upgrading PlantUML locally, re-test awslabs v19/v20 and consider
   unpinning.
 - Build/test/typecheck to validate new subpath outputs:
-  - `npm run build` (verify dist/mjs|cjs/mutators/* and dist/mutators/*.d.ts)
+  - `npm run build` (verify dist/mjs|cjs/mutators/_ and dist/mutators/_.d.ts)
   - `npm run test`, `npm run typecheck`, `npm run lint`
   - Confirm ESLint is clean after export sort and template simplification.
 
 ## Completed (recent)
+
 - Add stable mutator subpath exports:
   - Created `src/mutators/orval.ts` and `src/mutators/index.ts`.
   - Switched Rollup to multi-entry for JS + DTS outputs.
@@ -25,9 +28,18 @@ When updated: 2025-08-30T14:20:00Z
 - Included internal types in docs to remove TypeDoc warnings:
   - Exported `WithFns`, `Shape` (config) and `BaseInput` (factory),
     and re-exported them from the package root.
-- Created `./.stan/system/stan.project.md` to memorialize repo-specific  requirements (caching semantics, config builder behavior, bundling,
-  API surface).- Added informative TypeDoc comments to all functions and key exports
-  across `src/` (cache/config/factory/cachedAxios/mutator/index).- Replaced template README with library documentation and examples
+- Cleared final TypeDoc warning:
+  - Exported `SegInput` (config) and re-exported it at the root so
+    WithFns parameter docs resolve without warnings.
+- Follow-up docs polish:
+  - Exported `Segment` (config) and re-exported it at the root so
+    `index.SegInput`’s constituent type is documented and no warnings remain.
+- Created `./.stan/system/stan.project.md` to memorialize repo-specific
+  requirements (caching semantics, config builder behavior, bundling,
+  API surface).
+- Added informative TypeDoc comments to all functions and key exports
+  across `src/` (cache/config/factory/cachedAxios/mutator/index).
+- Replaced template README with library documentation and examples
   (quick start, builders, helpers, Orval integration, API surface).
 - Simplified project tsconfig (removed composite, declaration\*, outDir,
   tsBuildInfoFile) to avoid Rollup/TS plugin validation while keeping
