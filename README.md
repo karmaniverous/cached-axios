@@ -118,7 +118,7 @@ Use the provided mutator to keep generated clients cache-aware.
 
 ```ts
 // orval.config.ts (or .js)
-import { orvalMutator } from '@karmaniverous/cached-axios';
+import { orvalMutator } from '@karmaniverous/cached-axios/mutators/orval';
 
 export default {
   petstore: {
@@ -126,16 +126,23 @@ export default {
     output: {
       target: './src/generated/client.ts',
       client: 'axios',
-      mutator: { path: '@karmaniverous/cached-axios', name: 'orvalMutator' },
+      mutator: {
+        path: '@karmaniverous/cached-axios/mutators/orval',
+        name: 'orvalMutator',
+      },
     },
   },
 };
 ```
 
+Recommended path: '@karmaniverous/cached-axios/mutators/orval' for generators.
+For manual imports, a convenience barrel is available at
+'@karmaniverous/cached-axios/mutators'. The root export remains available if
+you prefer: `import { orvalMutator } from '@karmaniverous/cached-axios'`.
+
 The `orvalMutator<T, R>(config, options?)` shallow-merges `options` over `config`
 and always resolves to `AxiosResponse<T>`. It executes via the same shared
 cache-aware Axios instance exported as `cachedAxios`.
-
 ## The shared Axios instance (`cachedAxios`)
 
 ```ts

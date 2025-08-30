@@ -22,9 +22,14 @@ import dtsPlugin from 'rollup-plugin-dts';
 
 const outputPath = 'dist';
 
+// Multi-entry mapping to produce subpath bundles for JS and DTS.
+const entryPoints = {
+  index: 'src/index.ts',
+  'mutators/orval': 'src/mutators/orval.ts',
+  'mutators/index': 'src/mutators/index.ts',
+};
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 // Collect runtime dependency names (dependencies + peerDependencies) to mark as external.
 let runtimeExternalPkgs = new Set<string>();
 try {
@@ -86,15 +91,18 @@ const outCommon = (dest: string): OutputOptions[] => [
 ];
 
 export const buildLibrary = (dest: string): RollupOptions => ({
-  input: 'src/index.ts',
+  input: entryPoints,
   output: outCommon(dest),
   ...commonInputOptions(),
 });
 
 export const buildTypes = (dest: string): RollupOptions => ({
-  input: 'src/index.ts',
-  // Emit a single declaration file at dist/index.d.ts to match package.json
-  output: { file: `${dest}/index.d.ts`, format: 'es' },
+  input: entryPoints,
+  // Emit declaration files for all entry points at `dist/`, producing:
+  // - dist/index.d.ts
+  // - dist/mutators/orval.d.ts
+  // - dist/mutators/index.d.ts
+  output: { dir: `${dest}`, format: 'es' },
   plugins: [dtsPlugin()],
 });
 

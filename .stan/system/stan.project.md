@@ -23,7 +23,7 @@ Bundling and TypeScript
   - All runtime dependencies and peer dependencies are treated as
     external (including “deep” subpaths).
   - Outputs:
-    - dist/mjs/* (ESM), dist/cjs/* (CJS), dist/index.d.ts.
+    - dist/mjs/_ (ESM), dist/cjs/_ (CJS), dist/index.d.ts.
 - TypeScript configuration:
   - Shared options in tsconfig.base.json.
   - Project tsconfig.json is typecheck-only (noEmit: true) and avoids
@@ -84,6 +84,13 @@ Public API
     `AxiosError`, `AxiosRequestConfig`, `AxiosResponse`,
     `CacheProperties`, `CacheRequestConfig`, `BuiltNode`, `ConfigInput`,
     `Id`, `Tag`.
+  - Subpath exports (mutators):
+    - `@karmaniverous/cached-axios/mutators/orval` — canonical path for
+      code generators (preferred; best tree-shaking).
+    - `@karmaniverous/cached-axios/mutators` — convenience barrel for
+      manual imports (re-exports named mutators).
+    - The root entry continues to export `orvalMutator` for manual use,
+      but generator configs should target the precise subpath above.
 - Type augmentations (src/types.d.ts):
   - Adds an optional `cache?: false | Partial<CacheProperties>` to
     `AxiosRequestConfig`.
@@ -98,7 +105,7 @@ Testing, linting, docs
 - ESLint and Prettier configured with flat config and strict TypeScript
   rules; import sorting enforced.
 - TypeDoc generates API docs and consumes the README; `typedoc-plugin-
-  replace-text` may hide README sections bracketed by
+replace-text` may hide README sections bracketed by
   `<!-- TYPEDOC_EXCLUDE --> ... <!-- /TYPEDOC_EXCLUDE -->`.
 
 Behavioral requirements and notes

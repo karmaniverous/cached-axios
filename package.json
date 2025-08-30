@@ -55,13 +55,33 @@
         "types": "./dist/index.d.ts",
         "default": "./dist/cjs/index.js"
       }
-    }
+    },
+    "./mutators": {
+      "import": {
+        "types": "./dist/mutators/index.d.ts",
+        "default": "./dist/mjs/mutators/index.js"
+      },
+      "require": {
+        "types": "./dist/mutators/index.d.ts",
+        "default": "./dist/cjs/mutators/index.js"
+      }
+    },
+    "./mutators/orval": {
+      "import": {
+        "types": "./dist/mutators/orval.d.ts",
+        "default": "./dist/mjs/mutators/orval.js"
+      },
+      "require": {
+        "types": "./dist/mutators/orval.d.ts",
+        "default": "./dist/cjs/mutators/orval.js"
+      }
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/karmaniverous/cached-axios#readme",
-  "keywords": [
+  "homepage": "https://github.com/karmaniverous/cached-axios#readme",  "keywords": [
     "axios",
     "axios-cache-interceptor",
     "http-caching",
