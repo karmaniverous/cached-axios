@@ -102,7 +102,7 @@ export const buildTypes = (dest: string): RollupOptions => ({
   // - dist/index.d.ts
   // - dist/mutators/orval.d.ts
   // - dist/mutators/index.d.ts
-  output: { dir: `${dest}`, format: 'es' },
+  output: { dir: dest, format: 'es' },
   plugins: [dtsPlugin()],
 });
 
