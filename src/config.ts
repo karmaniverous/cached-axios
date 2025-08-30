@@ -20,12 +20,11 @@ export const ConfigInputSchema: z.ZodType<Record<string, unknown>> = z.lazy(
 export type ConfigInput = z.output<typeof ConfigInputSchema>;
 /** Segment types accepted by id/tag */
 type Segment = string | number;
-type SegInput = Segment | Segment[] | undefined;
+export type SegInput = Segment | Segment[] | undefined;
 
 /** Methods at every node */
 export type WithFns = {
-  id: (seg?: SegInput) => Id;
-  tag: (seg?: SegInput) => Tag;
+  id: (seg?: SegInput) => Id;  tag: (seg?: SegInput) => Tag;
 };
 
 type Leaf = undefined;
