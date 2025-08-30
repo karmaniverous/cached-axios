@@ -12,15 +12,14 @@
 
 export { withMutation, withQuery } from './cache';
 export { cachedAxios } from './cachedAxios';
-export type { BuiltNode, ConfigInput, Id, Tag } from './config';
+export type { BuiltNode, ConfigInput, Id, Shape, Tag, WithFns } from './config';
 export { buildConfig, ConfigInputSchema } from './config';
-export { makeCacheHelpers } from './factory';
+export { type BaseInput, makeCacheHelpers } from './factory';
 export {
   type OrvalBodyType,
   type OrvalErrorType,
   orvalMutator,
 } from './mutator';
-
 // Re-export axios types for generated code compatibility
 export type { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 

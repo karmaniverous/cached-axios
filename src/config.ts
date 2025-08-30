@@ -23,17 +23,16 @@ type Segment = string | number;
 type SegInput = Segment | Segment[] | undefined;
 
 /** Methods at every node */
-type WithFns = {
+export type WithFns = {
   id: (seg?: SegInput) => Id;
   tag: (seg?: SegInput) => Tag;
 };
 
 type Leaf = undefined;
-type Shape = { readonly [k: string]: Shape | Leaf };
+export type Shape = { readonly [k: string]: Shape | Leaf };
 
 export type BuiltNode<T, P extends string[]> = WithFns &
-  (T extends undefined
-    ? {}
+  (T extends undefined    ? {}
     : { readonly [K in keyof T]: BuiltNode<T[K], [...P, Extract<K, string>]> });
 
 /**

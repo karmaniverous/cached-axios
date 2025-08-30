@@ -8,13 +8,12 @@ import type { Id, Tag } from './config';
  * - May be a static object, a factory returning a config (or undefined),
  *   or `undefined` to opt out.
  */
-type BaseInput =
+export type BaseInput =
   | AxiosRequestConfig
   | (() => AxiosRequestConfig | undefined)
   | undefined;
 
-/**
- * Resolve the effective base Axios config for a single invocation.
+/** * Resolve the effective base Axios config for a single invocation.
  * - If `base` is a function, it is called on each use.
  * - Shallow-merge `options` over the base (options win).
  */
