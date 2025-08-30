@@ -81,7 +81,8 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/karmaniverous/cached-axios#readme",  "keywords": [
+  "homepage": "https://github.com/karmaniverous/cached-axios#readme",
+  "keywords": [
     "axios",
     "axios-cache-interceptor",
     "http-caching",
@@ -163,5 +164,5 @@
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
