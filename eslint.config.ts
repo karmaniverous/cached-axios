@@ -11,12 +11,12 @@ const tsconfigRootDir = dirname(fileURLToPath(import.meta.url));
 export default tseslint.config(
   {
     ignores: [
-      '**/.tsbuild/**',
-      'node_modules/**',
       '.stan/**',
-      'dist/**',
+      '**/.tsbuild/**',
       'coverage/**',
+      'dist/**',
       'docs/**',
+      'node_modules/**',
     ],
   },
   eslint.configs.recommended,

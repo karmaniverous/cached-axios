@@ -63,5 +63,6 @@
   "todo-tree.tree.groupedByTag": true,
   "todo-tree.tree.hideIconsWhenGroupedByTag": true,
   "todo-tree.tree.labelFormat": "${tag} ${after}",
-  "todo-tree.tree.showCountsInTree": true
+  "todo-tree.tree.showCountsInTree": true,
+  "yaml.format.singleQuote": true
 }
