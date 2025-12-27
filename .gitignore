@@ -12,3 +12,5 @@ dist/
 local/
 node_modules/
 stan/
+.stan/system/facet.state.json
+.stan/system/.docs.meta.json
