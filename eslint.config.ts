@@ -3,15 +3,14 @@ import prettierConfig from 'eslint-config-prettier';
 import prettierPlugin from 'eslint-plugin-prettier';
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 import { dirname } from 'path';
-import tseslint from 'typescript-eslint';
+import { configs, plugin } from 'typescript-eslint';
 import { fileURLToPath } from 'url';
 
 const tsconfigRootDir = dirname(fileURLToPath(import.meta.url));
 
-export default tseslint.config(
+export default [
   {
     ignores: [
-      '.stan/**',
       '**/.tsbuild/**',
       'coverage/**',
       'dist/**',
@@ -20,7 +19,7 @@ export default tseslint.config(
     ],
   },
   eslint.configs.recommended,
-  tseslint.configs.strictTypeChecked,
+  ...configs.strictTypeChecked,
   prettierConfig,
   {
     languageOptions: {
@@ -30,6 +29,7 @@ export default tseslint.config(
       },
     },
     plugins: {
+      '@typescript-eslint': plugin,
       prettier: prettierPlugin,
       'simple-import-sort': simpleImportSortPlugin,
     },
@@ -45,4 +45,4 @@ export default tseslint.config(
       'simple-import-sort/exports': 'error',
     },
   },
-);
+];

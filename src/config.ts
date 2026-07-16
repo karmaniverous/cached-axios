@@ -59,11 +59,11 @@ const buildAt = (node: unknown, path: string[]): unknown => {
     tag: (seg?: SegInput) => join([...path, ...toSegs(seg)]) as Tag,
   };
   if (node && typeof node === 'object') {
-    for (const key of Object.keys(node as Record<string, unknown>)) {
+    for (const key of Object.keys(node)) {
       const child = (node as Record<string, unknown>)[key];
       out[key] = buildAt(child, [...path, key]);    }
   }
-  return out as unknown;
+  return out;
 };
 
 /**
