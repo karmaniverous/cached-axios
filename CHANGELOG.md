@@ -2,8 +2,26 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [0.2.1](https://github.com/karmaniverous/cached-axios/compare/0.2.0...0.2.1)
+
+- chore: update dependencies, remove stan [`#4`](https://github.com/karmaniverous/cached-axios/pull/4)
+- chore: move changelog generation to after:bump hook [`#2`](https://github.com/karmaniverous/cached-axios/pull/2)
+- chore: add npm-pack-check CI workflow [`#1`](https://github.com/karmaniverous/cached-axios/pull/1)
+- cleanup [`104ace8`](https://github.com/karmaniverous/cached-axios/commit/104ace890c29c18be23d04d6143339c3a2a2b175)
+- generated stan assistant guide [`5267e92`](https://github.com/karmaniverous/cached-axios/commit/5267e9226f838fb2a3a3f57bd59016e937287477)
+- ni [`fb0be67`](https://github.com/karmaniverous/cached-axios/commit/fb0be67ff6da5c46a8001d3748a57cdf6278ec9c)
+- chore: add copilot review instructions [`892baf1`](https://github.com/karmaniverous/cached-axios/commit/892baf14e28e76b880accb1b577277716726c172)
+- added social media previews [`5806bb3`](https://github.com/karmaniverous/cached-axios/commit/5806bb3e65b9893bc4a7e625b1758370b4033d17)
+- eliminated obsolete config [`1e65d52`](https://github.com/karmaniverous/cached-axios/commit/1e65d52e847f79da85e5c3221779b1bf2ce7aa80)
+- config tweaks [`6cfbd19`](https://github.com/karmaniverous/cached-axios/commit/6cfbd1960ca2a22cbe7ede883bfaa4d6b0ce78c1)
+- chore: add npm publish safety net (.npmignore + gitignore *.local) [`2acae4b`](https://github.com/karmaniverous/cached-axios/commit/2acae4bd085cf36a33a1451da5f3755ae605252d)
+- new images [`47c5f47`](https://github.com/karmaniverous/cached-axios/commit/47c5f4779e511289917f86370941cf76930832c6)
+
 #### [0.2.0](https://github.com/karmaniverous/cached-axios/compare/0.1.0...0.2.0)
 
+> 30 August 2025
+
+- chore: release v0.2.0 [`d4e8b57`](https://github.com/karmaniverous/cached-axios/commit/d4e8b57285bdaf676847fb37403ed8bb5fc8991a)
 - feat: add mutators subpath exports and build [`b323773`](https://github.com/karmaniverous/cached-axios/commit/b3237738be9726bf189db26f747f555b9dc54993)
 - docs: export SegInput to remove final TypeDoc warning [`efa085b`](https://github.com/karmaniverous/cached-axios/commit/efa085b3c8a8a504c5f3eff083934cf26e11973f)
 - docs: export Segment and re-export at root to silence TypeDoc [`8776cff`](https://github.com/karmaniverous/cached-axios/commit/8776cff2f89389cd6eaf584ed8c6a4a3824ad897)
