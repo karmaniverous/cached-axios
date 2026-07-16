@@ -1,11 +1,7 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "noEmit": true,
-    "paths": {
-      "@/*": ["*"]
-    },
     "sourceMap": true
   },
   "include": ["**/*", "**/*.json"]

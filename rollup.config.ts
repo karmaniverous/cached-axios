@@ -1,6 +1,4 @@
-/* See <stanPath>/system/stan.project.md for global requirements.
- * Requirements addressed:
- * - Minimal library bundling: ESM + CJS outputs.
+/* Minimal library bundling: ESM + CJS outputs.
  * - Generate a single type declarations bundle at dist/index.d.ts.
  * - Keep runtime dependencies and Node built-ins external.
  * - No unnecessary plugins (no alias/replace/resolve/commonjs/json/terser).

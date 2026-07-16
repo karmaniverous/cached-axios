@@ -19,7 +19,7 @@
   },
   "out": "./docs/",
   "plugin": ["typedoc-plugin-mdn-links", "typedoc-plugin-replace-text"],
-  "projectDocuments": ["guides/stan-assistant-guide.md", "./CHANGELOG.md"],
+  "projectDocuments": ["./CHANGELOG.md"],
   "replaceText": {
     "replacements": [
       {

@@ -10,7 +10,7 @@ describe('axios type augmentations (cached-axios/types.d.ts)', () => {
   test('AxiosRequestConfig.cache supports false and Partial<CacheProperties>', () => {
     const cfgFalse: AxiosRequestConfig = { cache: false };
     const cfgPartial: AxiosRequestConfig = {
-      cache: { etag: 'abc', id: 'id-1' } as Partial<CacheProperties>,
+      cache: { etag: 'abc', id: 'id-1' },
     };
 
     // Runtime sanity

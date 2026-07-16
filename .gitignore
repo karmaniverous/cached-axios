@@ -1,8 +1,4 @@
 .rollup.cache/
-.stan/diff/
-.stan/dist/
-.stan/output/
-.stan/patch/
 .tsbuildinfo
 *.local
 *.tsbuildinfo
@@ -11,6 +7,3 @@ coverage/
 dist/
 local/
 node_modules/
-stan/
-.stan/system/facet.state.json
-.stan/system/.docs.meta.json
