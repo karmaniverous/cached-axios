@@ -2,9 +2,18 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [0.2.3](https://github.com/karmaniverous/cached-axios/compare/0.2.2...0.2.3)
+
+- bugfix: default cache to off — opt-in rather than opt-out [`#10`](https://github.com/karmaniverous/cached-axios/pull/10)
+- bugfix: use CacheRequestConfig in orvalMutator signature [`#8`](https://github.com/karmaniverous/cached-axios/pull/8)
+- bugfix: default cache to off in orvalMutator — opt-in rather than opt-out [`3920b70`](https://github.com/karmaniverous/cached-axios/commit/3920b70106efb2a7d465ae751e750d6884a46d3a)
+
 #### [0.2.2](https://github.com/karmaniverous/cached-axios/compare/0.2.1...0.2.2)
 
+> 11 September 2026
+
 - bugfix: fix orvalMutator options variance under exactOptionalPropertyTypes [`#5`](https://github.com/karmaniverous/cached-axios/pull/5)
+- chore: release v0.2.2 [`9b79a60`](https://github.com/karmaniverous/cached-axios/commit/9b79a602c8287432194bda45598943075f652109)
 - bugfix: fix orvalMutator options parameter variance under exactOptionalPropertyTypes [`b915d56`](https://github.com/karmaniverous/cached-axios/commit/b915d5672b8d27e0008656b7e9447adb92b6bd8e)
 
 #### [0.2.1](https://github.com/karmaniverous/cached-axios/compare/0.2.0...0.2.1)
