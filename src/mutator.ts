@@ -4,6 +4,7 @@ import type {
   AxiosRequestConfig,
   AxiosResponse,
 } from 'axios';
+import type { CacheRequestConfig } from 'axios-cache-interceptor';
 
 import { cachedAxios } from './cachedAxios';
 
@@ -29,17 +30,18 @@ export type OrvalBodyType<B> = B;
  * @returns A promise resolving to `AxiosResponse<T>`.
  */
 export const orvalMutator = async <T = unknown, R = unknown>(
-  config: AxiosRequestConfig<R>,
-  options?: AxiosRequestConfig,
+  config: CacheRequestConfig<unknown, R>,
+  options?: CacheRequestConfig,
 ): Promise<AxiosResponse<T>> => {
-  const final = { ...config, ...(options ?? {}) } as AxiosRequestConfig<R>;
+  const final = { ...config, ...(options ?? {}) } as CacheRequestConfig<unknown, R>;
 
-  // Call through the base AxiosInstance signature to avoid CacheRequestConfig mismatch
+  // Call through the base AxiosInstance signature. The cache-interceptor layer
+  // consumes cache properties before Axios core sees them, so the cast is safe.
   const res = await (cachedAxios as unknown as AxiosInstance).request<
     T,
     AxiosResponse<T>,
     R
-  >(final);
+  >(final as AxiosRequestConfig<R>);
 
   return res;
 };
