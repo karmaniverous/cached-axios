@@ -22,6 +22,9 @@ export type OrvalBodyType<B> = B;
  * - Calls through the `AxiosInstance` surface to avoid type mismatch with
  *   ACI's `CacheRequestConfig` generic parameters.
  * - Shallow-merges `options` over `config` (options win).
+ * - Defaults to `cache: false` to bypass ACI interceptor overhead. Callers
+ *   opt in to caching per-request via `cache: { ttl: <ms> }` in `config`
+ *   or `options`.
  *
  * @typeParam T The expected response data type.
  * @typeParam R The request body type (if any).
@@ -33,7 +36,7 @@ export const orvalMutator = async <T = unknown, R = unknown>(
   config: CacheRequestConfig<unknown, R>,
   options?: CacheRequestConfig,
 ): Promise<AxiosResponse<T>> => {
-  const final = { ...config, ...(options ?? {}) } as CacheRequestConfig<unknown, R>;
+  const final = { cache: false, ...config, ...(options ?? {}) } as CacheRequestConfig<unknown, R>;
 
   // Call through the base AxiosInstance signature. The cache-interceptor layer
   // consumes cache properties before Axios core sees them, so the cast is safe.
