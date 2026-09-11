@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [0.2.2](https://github.com/karmaniverous/cached-axios/compare/0.2.1...0.2.2)
+
+- bugfix: fix orvalMutator options variance under exactOptionalPropertyTypes [`#5`](https://github.com/karmaniverous/cached-axios/pull/5)
+- bugfix: fix orvalMutator options parameter variance under exactOptionalPropertyTypes [`b915d56`](https://github.com/karmaniverous/cached-axios/commit/b915d5672b8d27e0008656b7e9447adb92b6bd8e)
+
 #### [0.2.1](https://github.com/karmaniverous/cached-axios/compare/0.2.0...0.2.1)
+
+> 16 July 2026
 
 - chore: update dependencies, remove stan [`#4`](https://github.com/karmaniverous/cached-axios/pull/4)
 - chore: move changelog generation to after:bump hook [`#2`](https://github.com/karmaniverous/cached-axios/pull/2)
@@ -12,6 +19,7 @@ All notable changes to this project will be documented in this file. Dates are d
 - ni [`fb0be67`](https://github.com/karmaniverous/cached-axios/commit/fb0be67ff6da5c46a8001d3748a57cdf6278ec9c)
 - chore: add copilot review instructions [`892baf1`](https://github.com/karmaniverous/cached-axios/commit/892baf14e28e76b880accb1b577277716726c172)
 - added social media previews [`5806bb3`](https://github.com/karmaniverous/cached-axios/commit/5806bb3e65b9893bc4a7e625b1758370b4033d17)
+- chore: release v0.2.1 [`315e58b`](https://github.com/karmaniverous/cached-axios/commit/315e58b727baa7c86494948b88de6b346a834271)
 - eliminated obsolete config [`1e65d52`](https://github.com/karmaniverous/cached-axios/commit/1e65d52e847f79da85e5c3221779b1bf2ce7aa80)
 - config tweaks [`6cfbd19`](https://github.com/karmaniverous/cached-axios/commit/6cfbd1960ca2a22cbe7ede883bfaa4d6b0ce78c1)
 - chore: add npm publish safety net (.npmignore + gitignore *.local) [`2acae4b`](https://github.com/karmaniverous/cached-axios/commit/2acae4bd085cf36a33a1451da5f3755ae605252d)
