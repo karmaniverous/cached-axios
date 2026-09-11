@@ -8,6 +8,8 @@ import { setupCache } from 'axios-cache-interceptor';
  * - `interpretHeader: true` — honor HTTP cache headers.
  * - `staleIfError: true` — serve cached responses when revalidation fails.
  * - `ttl: 5 minutes` — fallback TTL if headers do not specify caching.
+ *   Note: the Orval mutator defaults to `cache: false` per-request,
+ *   bypassing the interceptor entirely unless callers opt in.
  *
  * Notes
  * - No `baseURL` is set; pass per-request baseURL/headers to keep helpers
