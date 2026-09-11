@@ -30,9 +30,9 @@ export type OrvalBodyType<B> = B;
  */
 export const orvalMutator = async <T = unknown, R = unknown>(
   config: AxiosRequestConfig<R>,
-  options?: AxiosRequestConfig<R>,
+  options?: AxiosRequestConfig,
 ): Promise<AxiosResponse<T>> => {
-  const final: AxiosRequestConfig<R> = { ...config, ...(options ?? {}) };
+  const final = { ...config, ...(options ?? {}) } as AxiosRequestConfig<R>;
 
   // Call through the base AxiosInstance signature to avoid CacheRequestConfig mismatch
   const res = await (cachedAxios as unknown as AxiosInstance).request<
